@@ -39,7 +39,7 @@ class Ninja:
         query = """UPDATE ninjas 
         SET first_name = %(first_name)s,
         last_name = %(last_name)s,
-        age = %(email)s
+        age = %(age)s
         WHERE id = %(id)s;
         """
         result = connectToMySQL(DB).query_db(query, data)
